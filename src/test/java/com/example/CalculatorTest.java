@@ -8,11 +8,11 @@ public class CalculatorTest {
 
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, calc.add(2, 2));
+        assertEquals(5, calc.add(2, 2)); // 2+2=4, on attend 5 → ÉCHEC
     }
 
     @Test
     public void subtract_isCorrect() {
-        assertEquals(4, calc.subtract(8, 4));
+        assertEquals(4, calc.subtract(8, 3)); // 8-3=5, on attend 4 → ÉCHEC
     }
 }
